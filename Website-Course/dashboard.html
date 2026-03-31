@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Siswa - WebDev Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">WebDev Course</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Course</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="#" class="btn" style="padding: 0.4rem 1rem;">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Dashboard Pembelajaran</h2>
+        <br>
+        <div class="card">
+            <h3>Progress Saat Ini</h3>
+            <p>Modul: HTML Dasar</p>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 65%;">65% Selesai</div>
+            </div>
+        </div>
+
+        <br>
+        <h3>Riwayat Materi</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Topik</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Struktur HTML</td>
+                    <td>Selesai</td>
+                    <td><a href="course.html" style="color: var(--primary-blue);">Ulangi</a></td>
+                </tr>
+                <tr>
+                    <td>Heading & Paragraf</td>
+                    <td>Selesai</td>
+                    <td><a href="course.html" style="color: var(--primary-blue);">Ulangi</a></td>
+                </tr>
+                <tr>
+                    <td>Image & Multimedia</td>
+                    <td>Sedang Dipelajari</td>
+                    <td><a href="course.html" class="btn" style="padding: 0.3rem 0.8rem;">Lanjutkan</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

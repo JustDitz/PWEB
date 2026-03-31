@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - WebDev Course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Admin Area</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Kembali ke Web</a></li>
+                <li><a href="#">Keluar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Panel Manajemen Administratif</h2>
+        <br>
+        <div class="grid-layout">
+            <div class="card">
+                <h3>Total Pengguna</h3>
+                <h1 style="color: var(--primary-blue); font-size: 3rem;">124</h1>
+            </div>
+            <div class="card">
+                <h3>Unggah Materi Baru</h3>
+                <form action="#" method="POST" style="margin-top: 1rem;">
+                    <div style="margin-bottom: 1rem;">
+                        <label>Judul Bab:</label><br>
+                        <input type="text" style="width: 100%; padding: 0.5rem;" required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label>File Video / Dokumen:</label><br>
+                        <input type="file" style="width: 100%; padding: 0.5rem;">
+                    </div>
+                    <button type="submit" class="btn">Unggah</button>
+                </form>
+            </div>
+        </div>
+
+        <br><br>
+        <h3>Daftar Pengguna Aktif</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Peran</th>
+                    <th>Progress Terakhir</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Pengguna Alpha</td>
+                    <td>Siswa</td>
+                    <td>HTML - 65%</td>
+                    <td><a href="#" style="color: red;">Blokir</a></td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Instruktur Beta</td>
+                    <td>Instruktur</td>
+                    <td>N/A</td>
+                    <td><a href="#" style="color: var(--primary-blue);">Edit</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
